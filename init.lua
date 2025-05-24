@@ -702,6 +702,7 @@ require('lazy').setup({
         neocmake = {},
         cmakelang = {},
         prettier = {},
+        codelldb = {},
       }
 
       -- Ensure the servers and tools above are installed
