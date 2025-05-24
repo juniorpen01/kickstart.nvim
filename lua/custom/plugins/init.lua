@@ -4,4 +4,12 @@
 -- See the kickstart.nvim README for more information
 return {
   { 'Civitasv/cmake-tools.nvim', opts = {} },
+  {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    ft = { 'markdown' },
+    build = function()
+      vim.fn['mkdp#util#install']()
+    end,
+  },
 }
