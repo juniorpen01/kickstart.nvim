@@ -2,4 +2,18 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    keys = {
+      { '-', '<cmd>Oil<CR>' },
+    },
+  },
+  {
+    'ellisonleao/gruvbox.nvim',
+    config = function()
+      vim.cmd.colorscheme 'gruvbox'
+    end,
+  },
+}
