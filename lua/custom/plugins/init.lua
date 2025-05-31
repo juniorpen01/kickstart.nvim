@@ -10,7 +10,6 @@ return {
       { '-', '<cmd>Oil<CR>' },
     },
   },
-  -- { 'windwp/nvim-ts-autotag', opts = {} },
   {
     'ellisonleao/gruvbox.nvim',
     config = function()
