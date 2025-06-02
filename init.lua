@@ -719,8 +719,10 @@ require('lazy').setup({
         'svelte',
         'bashls',
         'shfmt',
-        'prettier',
+        'prettierd',
         'markdownlint-cli2',
+        'ruff',
+        'basedpyright',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -773,8 +775,8 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        markdown = { 'prettier' },
-        json = { 'prettier' },
+        markdown = { 'prettierd' },
+        json = { 'prettierd' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
